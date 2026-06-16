@@ -7,7 +7,13 @@ if [[ $# -ne 1 ]]; then
 fi
 
 version="$1"
-formula_file="Formula/slash-key.rb"
+
+if [[ -z "${HOMEBREW_TAP_PATH:-}" ]]; then
+  echo "HOMEBREW_TAP_PATH is required." >&2
+  exit 1
+fi
+
+formula_file="${HOMEBREW_TAP_PATH}/Formula/slash-key.rb"
 url="https://github.com/kmatsushita1012/slash-key/archive/refs/tags/v${version}.tar.gz"
 
 sha256="$(curl -L --fail --silent --show-error "${url}" | shasum -a 256 | awk '{print $1}')"
