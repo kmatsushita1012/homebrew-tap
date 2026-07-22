@@ -1,11 +1,11 @@
 cask "remote-sim" do
   version "0.1.0"
-  sha256 "18ea13b27cef5ab1ccb463d95a49ed14570eb84a21c3606602f200640c4f3c56"
+  sha256 "7753cdebbd5f0d05c8d38bd7761932d4926c81e96c7dc378062fde4f30f3ba70"
 
-  url "https://github.com/kmatsushita1012/RemoteSim/releases/download/v#{version}/Remote.Sim-#{version}.dmg"
-  name "Remote Sim"
+  url "https://github.com/kmatsushita1012/RemoteSim/releases/download/v#{version}/RemoteSim-#{version}.dmg"
+  name "RemoteSim"
   desc "PCとスマホを連携してシミュレータを確認・操作するアプリ"
   homepage "https://github.com/kmatsushita1012/RemoteSim"
 
-  app "Remote Sim.app"
+  app "RemoteSim.app"
 end
