@@ -1,6 +1,6 @@
 cask "remote-sim" do
-  version "2.0.1"
-  sha256 "23c529bd68a3e12bd681781a404b5f60a71a07a3077ad455731a41987c349189"
+  version "2.0.0"
+  sha256 "aac9b274d33e9bbb7cfb108e054863d2a3510db238ed3a7d3c29784368e3576f"
 
   url "https://github.com/kmatsushita1012/RemoteSim/releases/download/v#{version}/RemoteSim-#{version}.dmg"
   name "RemoteSim"
